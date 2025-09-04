@@ -1,0 +1,44 @@
+INCI (International Nomenclature of Cosmetic Ingredients) is the list of ingredients contained in every beauty product: shampoo, body wash, deodorant, face cream, etc. The first ingredient listed is the one present in the highest quantity, followed by other components in decreasing concentrations.
+It’s often a list of confusing words that people tend to ignore, trusting instead more visually prominent labels, slogans, or brand names that ultimately convince us to buy a product. This is not superficiality, but rather a tendency to rely on a brand, a logo, or a slogan without personally understanding what we are really putting on our bodies (and thus absorbing!).
+We need to become familiar with INCI ingredients and understand their terminology better to eliminate products containing harmful ingredients.
+---
+PETROLATUMS  
+These are petroleum-derived substances. They are occlusive (they don’t let the skin breathe) and are not skin-compatible.  
+On labels, they appear as: Paraffinum Liquidum, Petrolatum, Mineral Oil, Vaseline, Ceresin, Ozokerite.
+---
+SILICONES  
+These substances are not skin-compatible and create a film on skin and hair that gives a false moisturizing effect.  
+On labels, they appear as: Dimethicone, Dimeticonol, Polydimethylsiloxane, Cyclopentasiloxane, Cyclohexasiloxane, Quaternium-80, Amodimethicone, Cyclomethicone, Trimethylsiloxysilicate.
+---
+PRESERVATIVES (allergenic or harmful)  
+Methylchloroisothiazolinone, Methylisothiazolinone.  
+**Parabens** (endocrine disruptors): Isobutyl Paraben, Butyl Paraben, Methyl Paraben, Propylparaben, Benzyl Paraben, Ethyl Paraben.  
+**Formaldehyde releasers** (carcinogenic): Sodium Hydroxymethyl Glycinate, Bronopol, Diazolidinyl Urea, Benzylhemiformal, Imidazolidinyl Urea, Quaternium-15, DMDM Hydantoin.  
+**Antimicrobials**: Butylated Hydroxyanisole (BHA), Butylated Hydroxytoluene (BHT), Triclosan.
+---
+EMULSIFIERS  
+Synthetic substances that facilitate product fluidity. PEGs and PPGs can be contaminated with ethylene oxide and 1,4-dioxane (carcinogenic).  
+On labels, they appear as: Polyethylene Glycol (PEG), Dipolyhydroxystearate, PEG6, PEG20, PEG75, PEG-40 Hydrogenated Castor Oil, Propylene Glycol, Butylene Glycol, Polypropylene Glycol, Ethylene Glycol.
+---
+SURFACTANTS  
+Chemically derived and aggressive, can dehydrate the skin.  
+On labels, they appear as: Sodium Lauryl Sulfate (SLS), Ammonium Lauryl Sulfate, TEA-Lauryl Sulfate, Magnesium Laureth Sulfate, MEA Laureth Sulfate, Sodium Laureth Sulfate (SLES), Ammonium Laureth Sulfate.
+---
+MEA / TEA / DEA  
+Substances that can penetrate the skin and form nitrosamines (carcinogenic).  
+On labels, they appear as: Cocamide DEA, Oleamide DEA, Lauramide DEA, Cocamide TEA, Oleamide TEA, Lauramide TEA, Cocamide MEA, Oleamide MEA, Lauramide MEA, Linoleamide DEA, Myristamide DEA, Stearamide DEA, DEA-Cethyl Phosphate, DEA-Oleth-3 Phosphate, TEA-Lauryl Sulfate, Thiethanoamine.
+---
+ENVIRONMENTAL IMPACT  
+Many cosmetic substances are not biodegradable or degrade very slowly, remaining in the environment for a long time and altering ecosystems.  
+Examples: Zeolite, EDTA, Hydroxyethylcellulose, 2-bromo-2-nitropropane-1,3-diol (Bronopol), Triclosan.
+---
+ARTIFICIAL COLORANTS  
+Synthetic colorants are indicated with the acronym CI (Colour Index) followed by a five-digit code (e.g., CI 42090). They are usually located toward the end of the ingredient list.
+---
+Final Rule of Thumb  
+If, when reading the label, you see ingredients ending with:  
+- **-one / -xane / -thicone** (silicones)  
+- **-fate** or containing “eth” (sulfates)  
+- **paraben** / **-ycol** or acronyms in capital letters (PEG, PPG, DEA, MEA, MIPA, EDTA)  
+
+→ you can safely consider this product **unnatural and to be avoided**!  

@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.venv/
+env/
+*.sqlite3
+*.log
+
+# Docker
+*.env.docker
+docker-compose.override.yml
+
+# Node / Frontend
+node_modules/
+dist/
+*.log
+
+# VSCode
+.vscode/
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# FAISS index / data
+data/faiss_index_post/
+data/images/
+data/product_images/

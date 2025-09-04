@@ -1,0 +1,61 @@
+#version: "3.8"
+
+services:
+  retriever:
+    build:
+      context: ./retriever
+      dockerfile: Dockerfile
+    env_file:
+      - .env.docker
+    environment:
+      ENV: docker
+      INDEX_PATH: /app/data/faiss_index_post
+      TWEETS_ESG: /app/data/tweets_ESG.txt
+      TWEETS_INCI: /app/data/tweets_green.txt
+      INCI_GREEN: /app/data/inci_sostenibile.txt
+      INCI_AVOID: /app/data/inci_dannoso.txt
+      BRAND_VOICE: /app/data/linee_guida_brand_tone.txt
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./data:/app/data       # monta prima la cartella data esterna
+    restart: always
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    env_file:
+      - .env.docker
+    environment:
+      ENV: docker
+      RETRIEVER_URL: http://retriever:9000/search
+      CSV_PATH: /app/data/qa_history_prompt.csv
+      GREEN_CSV: /app/data/inci_green.csv
+      RED_CSV: /app/data/inci_red.csv
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data       # monta prima la cartella data esterna
+    depends_on:
+      - retriever
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - frontend_node_modules:/app/node_modules
+    environment:
+      - VITE_API_URL=http://api:8000
+    command: ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+    depends_on:
+      - api
+    restart: always
+
+volumes:
+  frontend_node_modules:

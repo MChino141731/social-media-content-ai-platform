@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* Root e font */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+}
+
+/* Corpo pagina */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+
+  /* Sfondo */
+  background-image: url('/images/nature.png'); /* assicurati che il file esista in public/images/natur.jpg */
+  background-size: cover;       /* riempie tutto lo schermo */
+  background-position: center;  /* centra l'immagine */
+  background-repeat: no-repeat; /* non ripete l'immagine */
+
+  /* Colore di fallback solo se l'immagine non si carica */
+  background-color: transparent;
+
+  /* Testo e font */
+  color: #fff;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Link */
+a {
+  font-weight: 500;
+  color: #4b5563;   /* Tailwind gray-600 */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #2563eb;   /* Tailwind blue-600 */
+}
+
+
+/* Titoli */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+/* Pulsanti: solo stile base, colori gestiti da Tailwind */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Root wrapper */
+#root {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animazioni logo */
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card */
+.card {
+  padding: 2em;
+  border-radius: 12px;
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Footer */
+footer a {
+  color: #646cff; /* link blu iniziale */
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer a:hover {
+  color: #303f9f; /* blu scuro più visibile su sfondo chiaro o grigio */
+}
+
+/* Testo secondario */
+.read-the-docs {
+  color: #888;
+}
+
+/* Modalità chiara */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f5f5f5;
+    color: #111;
+  }
+  .card {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    color: #111;
+  }
+  footer a {
+    color: #555;
+  }
+}
