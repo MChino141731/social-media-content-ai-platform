@@ -261,7 +261,7 @@ SocialMediaContentAIPlatform/
 
 Prerequisiti: Docker + Docker Compose
 
-git clone https://github.com/your-username/social-media-content-ai-platform.git
+git clone https://github.com/MChino141731/social-media-content-ai-platform.git
 cd social-media-content-ai-platform
 cp .env.example .env.docker
 
