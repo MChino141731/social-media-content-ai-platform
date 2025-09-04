@@ -91,8 +91,8 @@ project/
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/Social-Media-Content-AI-Platform.git
-cd Social-Media-Content-AI-Platform
+git clone https://github.com/MChino141731/social-media-content-ai-platform.git
+cd social-media-content-ai-platform
 ```
 
 2. Copy the example environment file
@@ -198,127 +198,5 @@ Distributed under the **MIT License**.
 
 ## 👤 Authors
 
-- Your Name – @your-nickname  
-- Colleague Name – @colleague-nickname
-
-
-
-# 🧠 Social Media Content AI Platform
-
-**SocialMediaContentAIPlatform** è una **pipeline ETL (Extract, Transform, Load) con RAG e LLM** per generare contenuti social e analizzare ingredienti cosmetici sostenibili. La pipeline legge tweet e documenti INCI/brand da `.txt` e `.csv`, crea embeddings e li indicizza con **FAISS** per ricerche semantiche tramite un microservizio retriever. Tutte le funzionalità sono contestualizzate ai documenti caricati.
-
-## 🌟 Funzionalità principali
-
-1. **Generazione post Twitter:** usa i 5 chunk più semanticamente simili e con sentiment positivo.  
-2. **Generazione post Instagram:** come Twitter, più generazione immagini con **Together.ai / Flux.1-Schnell-free**.  
-3. **Creazione nuovo prodotto:** suggerisce idee basate sui documenti e tweet.  
-4. **Check INCI:** verifica ingredienti tramite CSV (`inci_green.csv` e `inci_red.csv`) e classifica quelli sconosciuti usando LLM. Gli utenti possono aggiungere nuovi ingredienti ai CSV.
-
-## 📊 Architettura
-
-![App Screenshot](Diagram.jpeg)
-
-## 🛠️ Tecnologie
-
-Python 3.11, PyTorch, FAISS, HuggingFaceEmbeddings, LangChain, Fireworks API / Llama4, Together.ai API / Flux.1-Schnell-free, FastAPI, React/Vite + TailwindCSS, Node.js / npm, Docker + Docker Compose, Visual Studio Code
-
-## 📁 Struttura del progetto
-
-SocialMediaContentAIPlatform/
-├── retriever/
-│   ├── main.py
-│   ├── Dockerfile
-│   └── requirements.txt
-├── api/
-│   ├── main.py
-│   ├── api.py
-│   ├── inci_utils.py
-│   ├── Dockerfile
-│   └── requirements.txt
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── Dockerfile
-├── data/
-│   ├── faiss_index_post/
-│   ├── images/
-│   ├── product_images/
-│   ├── tweets_ESG.txt
-│   ├── tweets_green.txt
-│   ├── linee_guida_brand_tone.txt
-│   ├── inci_dannoso.txt
-│   ├── inci_sostenibile.txt
-│   ├── inci_green.csv
-│   └── inci_red.csv
-├── docker-compose.yml
-├── .env.example
-├── Diagram.jpeg
-└── README.md
-
-## ⚙️ Installazione
-
-### 🐳 Metodo 1: Docker (consigliato)
-
-Prerequisiti: Docker + Docker Compose
-
-git clone https://github.com/MChino141731/social-media-content-ai-platform.git
-cd social-media-content-ai-platform
-cp .env.example .env.docker
-
-Inserisci le tue API Keys in `.env.docker`:
-FIREWORKS_API_KEY_MIA=<your_fireworks_key>
-TOGETHER_API_KEY=<your_together_key>
-
-Avvia i container:
-docker-compose up --build
-
-API: http://localhost:8000  
-Frontend: http://localhost:5173  
-Node.js e Tailwind sono inclusi nei container.
-
-### 🐍 Metodo 2: Locale (opzionale)
-
-Prerequisiti: Python 3.11, pip, Node.js / npm
-
-cp .env.example .env
-Inserisci le tue API Keys in `.env`.
-
-Crea e attiva virtual environment:
-python -m venv .venv
-Windows PowerShell: .\.venv\Scripts\activate.ps1
-Mac/Linux: source .venv/bin/activate
-
-Installa dipendenze Python:
-pip install -r requirements.txt
-
-Avvia servizi:
-# Retriever
-uvicorn retriever/main:app --port=9000
-# API
-uvicorn api/main:app --port=8000
-# Frontend (opzionale)
-cd frontend
-npm install
-npm run dev -- --host 0.0.0.0
-
-## 🧪 Funzionamento della pipeline
-
-1. Extraction: carica tweet da `tweets_ESG.txt` e `tweets_green.txt`  
-2. Transformation: 1 tweet = 1 chunk, embeddings HuggingFace, indicizzazione FAISS  
-3. Loading/Analysis: query semantica via retriever, LLM + Fireworks API per risposte, salvataggio in `qa_history_prompt.csv`  
-
-## 📌 Configurazione
-
-.env: variabili locali (API Keys, percorsi)  
-.env.docker: variabili Docker (percorsi container, nomi servizi)  
-docker-compose.yml: container e rete  
-requirements.txt: dipendenze Python per microservizio
-
-## 📄 License
-
-MIT License
-
-## 👤 Autori
-
-Your Name – @your-nickname  
-Colleague Name – @colleague-nickname
+- @MChino141731 
+- @Luisandro11
