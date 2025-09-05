@@ -45,11 +45,13 @@ This setup allows **fast, semantic-driven content generation** grounded in both 
 project/
 │
 ├── retriever/
+│   ├── __init__.py
 │   ├── main.py              
 │   ├── Dockerfile
 │   └── requirements.txt
 │
 ├── api/
+│   ├── __init__.py
 │   ├── main.py              
 │   ├── api.py               
 │   ├── inci_utils.py        
@@ -73,8 +75,11 @@ project/
 │   ├── inci_green.csv
 │   └── inci_red.csv
 │
+├── __init__.py
 ├── docker-compose.yml
 ├── .env.example
+├── .gitignore
+├── LICENSE
 ├── Diagram.jpeg
 └── README.md
 ```
