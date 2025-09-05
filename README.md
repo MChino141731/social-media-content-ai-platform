@@ -10,6 +10,8 @@ It provides **four main functionalities**:
 3. **New Product Creation:** Suggests ideas for a new product based on the input documents and tweets.  
 4. **INCI Check:** Takes a list of ingredients and checks them against two CSV files (`green` and `red`) to identify sustainable or harmful ingredients. If an ingredient is not found, it is marked gray and the LLM attempts to classify it. Users can optionally add new ingredients to the green or red lists.
 
+👉 **Note:** If desired, you can easily modify the code to replace the default **LLM** (for text and/or image generation) with a more powerful or different model, simply by updating the API calls.
+
 This setup allows **fast, semantic-driven content generation** grounded in both ESG principles and sustainable cosmetics knowledge, while keeping the source documents as context for all tasks.
 
 ---
